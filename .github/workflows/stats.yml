@@ -11,8 +11,8 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          token: ${{ secrets.GH_TOKEN }}
-          user: YOUR-USERNAME-HERE
+          token: ${{ secrets.LANGUAGE_STATS_TOKEN }}
+          user: gamerplant3
           template: classic
           base: "" # This clears default header info
           plugin_languages: yes
