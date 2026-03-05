@@ -1,0 +1,15 @@
+name: Update Language Stats
+on:
+  schedule:
+    - cron: "0 0 * * *" # Runs every night at midnight
+  workflow_dispatch: # Allows you to run it manually
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: stefvuck/github-profile-language-analytics@v1.1.0
+        with:
+          github_token: ${{ secrets.LANGUAGE_STATS_TOKEN }}
+          visualization_types: "donut" # Options: pie, bar, donut
