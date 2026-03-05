@@ -16,12 +16,14 @@ jobs:
           base: ""
           # Language Plugin Settings
           plugin_languages: yes
-          #plugin_languages_ignored: html, css
+          plugin_languages_ignored: html, css, ruby
+          
           plugin_languages_details: percentage
           plugin_languages_sections: most-used
-          plugin_languages_indepth: no        # Switch to 'no' = prevent blank timeouts
-          plugin_languages_limit: 8           # Display up to 8 languages
-          repositories_batch: 100             # Scans up to 100 repos
-          plugin_languages_threshold: 0%      # Don't hide small percentages
+          repositories_forks: no              # exclude forks
+          plugin_languages_indepth: no        # prevent blank timeouts
+          plugin_languages_limit: 8           # display up to 8 languages
+          repositories_batch: 100             # scan up to 100 repos
+          plugin_languages_threshold: 0%      # don't hide small percentages
           plugin_languages_skipped: ""        # Ensure nothing is being accidentally ignored
           filename: github-metrics.svg
