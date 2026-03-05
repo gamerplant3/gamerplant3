@@ -28,5 +28,5 @@ jobs:
           plugin_languages_skipped: ""        # Ensure nothing is being accidentally ignored
           
           filename: github-metrics.svg
-          extra_css: |
+          extras_css: |
             h2, h3, .header { fill: #ffffff !important; color: #ffffff !important; }
