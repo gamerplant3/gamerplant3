@@ -15,10 +15,13 @@ jobs:
           user: gamerplant3
           template: classic
           base: "" # This clears default header info
-          plugin_languages: yes
-          plugin_languages_ignored: html, css # Optional hide "fluff"
+          plugin_languages_ignored: html, css
           plugin_languages_details: bytes-size, percentage
           plugin_languages_sections: most-used
-          plugin_languages_indepth: yes
+          plugin_languages_indepth: yes        # Forces it to calculate real lines of code
+          plugin_languages_limit: 8           # Shows up to 8 languages
+          plugin_languages_recent_load: 1000  # Scans up to 1000 recent events
+          plugin_languages_recent_days: 365   # Looks back a full year
+          repositories_batch: 200             # Scans up to 200 repos at once
           # This saves the image to your repo automatically
           filename: github-metrics.svg
