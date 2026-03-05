@@ -26,4 +26,7 @@ jobs:
           repositories_batch: 100             # scan up to 100 repos
           plugin_languages_threshold: 0%      # don't hide small percentages
           plugin_languages_skipped: ""        # Ensure nothing is being accidentally ignored
+          
           filename: github-metrics.svg
+          extra_css: |
+            h2, h3, .header { fill: #ffffff !important; color: #ffffff !important; }
