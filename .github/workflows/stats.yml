@@ -29,11 +29,5 @@ jobs:
           
           filename: github-metrics.svg
           extras_css: |
-            /* make headings white */
-            h2, h3, .header { fill: #ffffff !important; color: #ffffff !important; }
-
-            /* hide first header */
-            .header:first-of-type, 
-            h2:first-of-type { 
-              display: none !important; 
-            }
+            /* hide headers */
+            h2, h3, .header { display: none !important; }
