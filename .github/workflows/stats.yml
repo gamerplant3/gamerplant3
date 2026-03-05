@@ -16,7 +16,7 @@ jobs:
           base: ""
           # Language Plugin Settings
           plugin_languages: yes
-          plugin_languages_ignored: html, css, ruby
+          #plugin_languages_ignored: html, css, ruby
           
           plugin_languages_details: percentage
           plugin_languages_sections: most-used
